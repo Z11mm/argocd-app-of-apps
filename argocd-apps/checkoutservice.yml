@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: checkoutservice
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://gitlab.com/deimosdev/playground/zim/month_3/boutique-microservices-manifests.git
+    path: microservices/checkoutservice
+    targetRevision: HEAD
+  destination:
+    namespace: argocd-boutique-app
+    server: https://kubernetes.default.svc
