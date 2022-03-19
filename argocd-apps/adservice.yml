@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/deimosdev/playground/zim/month_3/boutique-microservices-manifests.git
+    repoURL: git@gitlab.com:deimosdev/playground/zim/month_3/argocd-apps-boutique.git
     path: microservices/adservice
     targetRevision: HEAD
   destination:
