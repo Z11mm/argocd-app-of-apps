@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://gitlab.com/deimosdev/playground/zim/month_3/boutique-microservices-manifests.git
-    path: adservice/
+    path: microservices/adservice
     targetRevision: HEAD
   destination:
     namespace: argocd-boutique-app
